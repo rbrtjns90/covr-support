@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Shield, Eye, Lock, Smartphone, Zap, Star } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -190,6 +191,11 @@ export default function Home() {
       <footer className="px-4 py-8 border-t border-gray-800">
         <div className="mx-auto max-w-4xl text-center">
           <Separator className="mb-6 bg-gray-800" />
+          <div className="flex justify-center items-center gap-4 mb-4">
+            <Link href="/privacy" className="text-blue-400 hover:text-blue-300 text-sm underline">
+              Privacy Policy
+            </Link>
+          </div>
           <p className="text-gray-500 text-sm">
             © 2025 COVR. Privacy-first photo organization.
           </p>
